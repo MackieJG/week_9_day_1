@@ -1,0 +1,24 @@
+1. What is responsible for defining the routes of the `games` resource?
+A. The helpers/create_router.js handles the defining of routes between the game. 
+
+2. What do you notice about the folder structure?  Whats the client responsible for? Whats the server responsible for?
+A. The Client handles the game definition - how it looks, user input and processing of that data.
+    Handles all the user/client information. Server side takes the data saved in state and processes it to be readable in the database. 
+
+3. What are the the responsibilities of server.js?
+A. server.js connects the database to the client side information. Such as the form info input by the user. Deals with the requests from the api and response. Listens out for changes on the server. 
+
+4. What are the responsibilities of the `gamesRouter`?
+A. It creates the API end points and connects those end points to the rest of the game when requested.
+
+5. What process does the the client (front-end) use to communicate with the server?
+A. An API fetch request will be used to create a request from the server.
+
+6. What optional second argument does the `fetch` method take? And what is it used for in this application? Hint: See [Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) on the MDN docs
+A. Allows for changing options such as the post method how the json is read.
+
+
+7. Which of the games API routes does the front-end application consume (i.e. make requests to)?
+A. getGames postGames deleteGames
+8. What are we using the [MongoDB Driver](http://mongodb.github.io/node-mongodb-native/) for?
+A. MongoDB Driver allows us to connect the MongoDB to our application parse data. 
